@@ -18,5 +18,10 @@ A file for the options of the library.
 <br>
 <h3> results.html </h3>
 A human-readable page of the results.json that will be created by the server-side library
-
-
+<hr>
+<h2> Usage </h2>
+<ol>
+  <li> include the library in client-side as well as server-side. </li>
+  <li> in progress......... </li>
+  <li> </li>
+  <li> </li>
