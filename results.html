@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">          
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="quickFeed.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #myProgress {
+              width: 100%;
+              background-color: #ddd;
+            }
+            </style>
+    </head>
+    <body>
+        <div id="results" class='container' data-src="/results.json">
+            <div class="answers-container">
+                <table class="table" id="text-answers">
+                    <thead>
+                        <tr>
+                            <th scope="question">question</th>
+                            <th scope="answer">answer</th>
+                            <th scope="value"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <table class="table" id="free-buttons-answers">
+                    <thead>
+                        <tr>
+                            <th scope="question">question</th>
+                            <th scope="answer">answer</th>
+                            <th scope="value"></th>                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <table class="table" id="evaluation-answers">
+                    <thead>
+                        <tr>
+                            <th scope="question">question</th>
+                            <th scope="answer">answer</th>
+                            <th scope="value"></th>                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <img src="../desktop capture.png" width="0" height="0" id="desktop-capture">
+        <div class="tracks-container container">
+            <div class="clicks-container col-md-6">
+            <h3><b>Click</b></h3>
+            </div>
+            <div class="over-container col-md-6">
+            <h3><b>Over</b></h3>
+            </div>
+        </div>
+    </body>
+</html>
