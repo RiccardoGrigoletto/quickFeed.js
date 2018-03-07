@@ -21,7 +21,28 @@ A human-readable page of the results.json that will be created by the server-sid
 <hr>
 <h2> Usage </h2>
 <ol>
-  <li> include the library in client-side as well as server-side. </li>
-  <li> in progress......... </li>
-  <li> </li>
-  <li> </li>
+  <li> include the client-side library in the HTML pages <code> <script src="path/to/quickFeed.js"></script> </code>
+    <br>as well as server-side 
+    <code> var quickFeed = require('path/to/quickFeed-server.js');  </code>
+ </li>
+  <li> In the HTML page declare the container for the explicit data gathering and the options file <br>
+    <pre><code>&lt;div id="question" data-src="/path/to/options.json"></div&lt;
+    </code></pre> 
+  </li>
+  <li> 
+    In the server-side, allow the server to listen for data <br><code>app.post('/answer', function(request, response){
+    response.json(quickFeed.add("query",request));
+    });
+    app.post('/time_spent', function(request,response) {
+        response.json(quickFeed.add("time",request));
+    });
+    app.post('/click_track', function(request,response) {
+        response.json(quickFeed.add("click",request));
+    });
+    app.post('/over_track', function(request,response) {
+        response.json(quickFeed.add("over",request));
+    });</code><br>
+    (here i used 'express' library <br>
+    <code> var express = require('express');
+     var app = express();
+    </code> ) </li>
