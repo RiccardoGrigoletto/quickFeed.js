@@ -1,0 +1,38 @@
+{
+    "default": {
+        "evaluation_min":0,
+        "evaluation_max":10
+    },
+    "queries" :[
+        {
+            "id":"ltp",
+            "type":"free_buttons",
+            "options":{
+                "buttons":[
+                    "yes",
+                    "no"
+                ]
+            },
+            "question":"Do you like this page?",
+            "priority":1
+        },
+        {
+            "id" : "hay",
+            "type" : "evaluation",
+            "options" : {
+            },
+            "question" : "how are you?",
+            "priority":0.5
+        },
+        {
+            "question":"What's your name?",
+            "type":"text",
+            "id":"wyn",
+            "priority":0.5
+            
+        }
+    ],
+    "mouse_over":true,
+    "mouse_click":true,
+    "time":true
+}
