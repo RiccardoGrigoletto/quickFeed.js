@@ -5,7 +5,7 @@ A client-side and server-side JavaScript library for Web Analytics
 
 <h3> quickFeed.js </h3> (require: jQuery, Bootstrap)
 The client-side library. 
-It builds the graphic content, collects and sends the data gathered in the client side.
+It builds the graphic content, collects and sends the data gathered at client side.
 It select the question for the user and filter them using cookies.
 <br>
 <h3> quickFeed-server.js </h3> (require: NodeJS)
